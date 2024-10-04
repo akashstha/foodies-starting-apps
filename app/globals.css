@@ -12,6 +12,19 @@ body {
   margin: 0;
   background: radial-gradient(#282c34, #282c34);
 }
+main{
+  text-align: center;
+}
+h1{
+  color: white;
+  text-align: center;
+}
+h2{
+  color: white;
+  font-size: 30px;;
+}
+
+
 
 .header-background {
   position: absolute;
