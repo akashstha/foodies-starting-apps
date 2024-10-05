@@ -1,14 +1,16 @@
 import imagesFood from "@/assets/logo.png";
+import Image from "next/image";
 import Link from "next/link";
+import styles from "./MainHeader.module.css";
 
 const MainHeader = () =>{
     return(
-        <header>
-            <Link href="/">
-            <img src ={imagesFood.src} alt = "Food on the paltes"/>
+        <header className={styles.header}>
+            <Link href="/" className={styles.logo}>
+            <Image src ={imagesFood} alt = "Food on the paltes" priority/>
             Food in a plates</Link>
 
-            <nav>
+            <nav className={styles.nav}>
                 <ul>
                     <li>
                         <Link href="/meals">Meals that you like</Link>
