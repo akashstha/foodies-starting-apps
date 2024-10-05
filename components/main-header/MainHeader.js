@@ -2,9 +2,12 @@ import imagesFood from "@/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./MainHeader.module.css";
+import MainHeaderBackground from "./MainHeaderBackground";
 
 const MainHeader = () =>{
     return(
+        <>
+        <MainHeaderBackground/>
         <header className={styles.header}>
             <Link href="/" className={styles.logo}>
             <Image src ={imagesFood} alt = "Food on the paltes" priority/>
@@ -21,6 +24,7 @@ const MainHeader = () =>{
                 </ul>
             </nav>
             </header>
+            </>
     )
 }
 export default MainHeader;
